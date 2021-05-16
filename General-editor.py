@@ -1,0 +1,17 @@
+from PIL import Image, ImageFilter 
+img = Image. open("squirtle.jpg")
+#print (img)
+#print (dir(img))
+Filtered_img= img.filter(ImageFilter.BLUR)
+Filtered_img= img.convert('L')
+#Filtered_img= Filtered_img.rotate(90)
+#Filtered_img.save ("blurgrey2.png", 'png')
+#resized_image= Filtered_img.resize((300,300))
+#box = (100, 100, 400, 400)
+#region = Filtered_img.crop(box)
+#Filtered_img.thumbnail((2000,2000))
+print(Filtered_img.size)
+Filtered_img.show()
+#resized_image.show()
+#region.show()
+
